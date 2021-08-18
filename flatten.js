@@ -1,16 +1,12 @@
-let eqArrays = (array1, array2) => {
-  i = 0;
-  for (let a of array1) {
-    if (a !== array2[i]) {
-      return false;
-    }
-    i++;
-  }
-  return true;
+let eqArrays = (actual, expected) => {
+  return (
+    actual.length === expected.length &&
+    actual.every((element, i) => element === expected[i])
+  );
 };
 
-let assertArraysEqual = (array1, array2) => {
-  if (eqArrays(array1, array2)) {
+let assertArraysEqual = (actual, expected) => {
+  if (eqArrays(actual, expected)) {
     console.log("✅ The actual array is equal to the expected array.");
   } else {
     console.log("❌ The actual array does not equal to the expected array.");
