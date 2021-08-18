@@ -36,4 +36,5 @@ const flatten = (inputArray) => {
   return flatArray;
 };
 
+//const flatten = (inputArray) => (inputArray.flat(1));
 //console.log(flatten([1, 2, [3, 4], 5, [6]]));
