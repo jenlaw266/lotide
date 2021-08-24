@@ -3,7 +3,7 @@
     "chai": "^4.3.4",
     "mocha": "^9.1.0"
   },
-  "name": "lotide",
+  "name": "@jenlaw266/lotide",
   "version": "1.0.0",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -102,11 +102,11 @@
     "url": "git+https://github.com/jenlaw266/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jennifer Law",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jenlaw266/lotide/issues"
   },
   "homepage": "https://github.com/jenlaw266/lotide#readme",
-  "description": ""
+  "description": "mini version of the Lodash library"
 }
