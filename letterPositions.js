@@ -1,18 +1,3 @@
-let eqArrays = (actual, expected) => {
-  return (
-    actual.length === expected.length &&
-    actual.every((element, i) => element === expected[i])
-  );
-};
-
-let assertArraysEqual = (actual, expected) => {
-  if (eqArrays(actual, expected)) {
-    console.log("✅ The actual array is equal to the expected array.");
-  } else {
-    console.log("❌ The actual array does not equal to the expected array.");
-  }
-};
-
 const letterPositions = function (sentence) {
   const results = {};
 
@@ -32,5 +17,7 @@ const letterPositions = function (sentence) {
 };
 
 //test code
-assertArraysEqual(letterPositions("hello there").e, [1, 7, 9]);
-console.log(letterPositions("hello there"));
+// assertArraysEqual(letterPositions("hello there").e, [1, 7, 9]);
+// console.log(letterPositions("hello there"));
+
+module.exports = letterPositions;
